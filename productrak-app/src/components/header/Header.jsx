@@ -1,8 +1,11 @@
 
 
 const Header = ()=> {
+  //!JS Alani
+
   return (
-    <div className="App">
+    //! JSX
+    <div>
       <h1>Header</h1>
     </div>
   )
