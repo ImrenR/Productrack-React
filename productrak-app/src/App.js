@@ -1,10 +1,10 @@
 
-import './App.scss';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <h1>Product APP</h1>
+      <h1>Productrack- App</h1>
     </div>
   );
 }
