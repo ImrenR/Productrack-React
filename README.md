@@ -24,18 +24,18 @@ Deployed on **GitHub Pages**: [View Live](https://imrenr.github.io/productrak-ap
 ##  Folder Structure
 Productrack-React/
 ```│
-├── node_modules/ # Installed dependencies
-├── public/ # Static public assets
-├── src/ # Source code
-│ ├── components/ # Reusable UI components
+├── node_modules/ 
+├── public/ 
+├── src/ 
+│ ├── components/ 
 │ │ ├── Header/
 │ │ ├── ProductList/
 │ │ └── ProductCard/
-│ ├── App.js # Main App component
-│ ├── index.js # Entry point
-│ └── styles/ # SCSS styles
-├── package.json # Project configuration
-└── README.md # Project documentation
+│ ├── App.js 
+│ ├── index.js 
+│ └── styles/ 
+├── package.json 
+└── README.md 
 ```
 ---
 
@@ -43,7 +43,7 @@ Productrack-React/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ImrenR/Productrack-React.git
+   git clone https://imrenr.github.io/productrak-app/
    cd Productrack-React
 
 # Getting Started with Create React App
