@@ -1,4 +1,5 @@
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 .header {
   text-align: center;
@@ -11,11 +12,12 @@
     font-family: monospace;
   }
   .btn {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // gap: 1rem;
+@include flex( row,center,1rem);
     button {
       padding: 1rem;
       border-radius: 1rem;
