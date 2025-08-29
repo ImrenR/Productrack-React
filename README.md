@@ -35,7 +35,7 @@ Productrack-React/
 │ ├── index.js # Entry point
 │ └── styles/ # SCSS styles
 ├── package.json # Project configuration
-└── README.md # Project documentation```
+└── README.md # Project documentation
 
 ---
 
