@@ -34,6 +34,11 @@
       border-radius: $borderRadius;
       transform: translateX(100%);
       transition: all 1s;
+      height: 25%;
+      overflow: auto;
+      &::-webkit-scrollbar{
+        display: none;
+      }
     }
     &:hover .card_over {
      transform: translateX(0%);
