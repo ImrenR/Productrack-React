@@ -36,7 +36,7 @@ Productrack-React/
 │ └── styles/ # SCSS styles
 ├── package.json # Project configuration
 └── README.md # Project documentation
-
+```
 ---
 
 ##  Installation & Setup
