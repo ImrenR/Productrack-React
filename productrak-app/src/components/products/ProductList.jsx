@@ -1,3 +1,4 @@
+import ProductCard from "./ProductCard"
 
 
 const ProductList = ({products})=> {
@@ -8,16 +9,7 @@ const ProductList = ({products})=> {
   return (
 <div>
   {
-    products.map((item)=> {
-      return (
-        <div>
-              {item.id}
-              <div>{item.title}</div>
-               <img src={item.image}/>
-          
-        </div>
-      )
-    })
+    products.map((products)=> <ProductCard {...products} />)
   }
 </div>
   )
