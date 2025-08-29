@@ -38,6 +38,9 @@
     &:hover .card_over {
      transform: translateX(0%);
     }
+    &:hover .img {
+     filter: none;
+    }
   }
   img {
     width: 100%;
