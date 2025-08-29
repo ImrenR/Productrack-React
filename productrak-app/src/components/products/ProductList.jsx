@@ -9,7 +9,7 @@ const ProductList = ({products})=> {
   return (
 <div>
   {
-    products.map((products)=> <ProductCard {...products} />)
+    products.map((products)=> <ProductCard key={products.id} {...products} />)
   }
 </div>
   )
