@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ImrenR/Productrack-React.git/static/css/main.8ca4b652.css",
+    "main.js": "/ImrenR/Productrack-React.git/static/js/main.90fc2b2c.js",
+    "index.html": "/ImrenR/Productrack-React.git/index.html",
+    "main.8ca4b652.css.map": "/ImrenR/Productrack-React.git/static/css/main.8ca4b652.css.map",
+    "main.90fc2b2c.js.map": "/ImrenR/Productrack-React.git/static/js/main.90fc2b2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ca4b652.css",
+    "static/js/main.90fc2b2c.js"
+  ]
+}
