@@ -23,7 +23,7 @@ Deployed on **GitHub Pages**: [View Live](https://imrenr.github.io/Productrack-R
 
 ##  Folder Structure
 Productrack-React/
-│
+```│
 ├── node_modules/ # Installed dependencies
 ├── public/ # Static public assets
 ├── src/ # Source code
@@ -35,7 +35,7 @@ Productrack-React/
 │ ├── index.js # Entry point
 │ └── styles/ # SCSS styles
 ├── package.json # Project configuration
-└── README.md # Project documentation
+└── README.md # Project documentation```
 
 ---
 
