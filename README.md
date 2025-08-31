@@ -1,7 +1,8 @@
 ## Productrack-React
 
 A React + Vite product tracking web application with a modular structure and SCSS styling.
-Deployed on GitHub Pages: View Live
+Deployed on GitHub Pages: [View Live](https://imrenr.github.io/productrak-app/)
+
 
 ---
 
