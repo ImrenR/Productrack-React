@@ -1,3 +1,4 @@
+import sampleImage from '@/assets/sample.png';
 
 
 const ProductCard = ({price, title, image, id}) => {
@@ -7,7 +8,7 @@ const ProductCard = ({price, title, image, id}) => {
      <div className="price"  >
       <h3>{price}$</h3>
       </div>
-      <img src={image} alt="" />
+      <img src={sampleImage} alt="" />
       <div className="card_over">
         <h2>{title}</h2>
       </div>
