@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  base: '/productrak-app/',
+  base: "/productrak-app/",
   plugins: [react()],
   resolve: {
     alias: {
