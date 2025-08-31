@@ -25,7 +25,7 @@
       z-index: 2;
     }
 
-    &_over {
+    .card-over {
       position: absolute;
       width: 100%;
       z-index: 3;
@@ -44,7 +44,7 @@
       }
     }
 
-    &:hover .card_over {
+    &:hover .card-over {
       transform: translateX(0%);
     }
 

@@ -7,7 +7,7 @@ import { products, categories } from './helper/data';
 function App() {
   return (
     <div className="App">
-      <Header categories={categories} title="Product List" />
+      <Header categories={categories} title="All Electronics" />
       <ProductList products={products} />
     </div>
   );

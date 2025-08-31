@@ -4,8 +4,6 @@ import "./Product.scss"
 const ProductList = ({products})=> {
   // console.log(props.products) //! we can go into the array withthis
   
-  const {title,price, image,id } = products
-  
   return (
 <div className="product-list">
   {
