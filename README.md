@@ -58,6 +58,7 @@ Deployed on GitHub Pages: [View Live](https://imrenr.github.io/productrak-app/)
 ### Clone the repository
 
 git clone https://github.com/imrenr/productrak-app.git
+
 cd Productrack-React
 
 ### Install dependencies
