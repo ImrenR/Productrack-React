@@ -1,33 +1,62 @@
-@import '../../scss/variables';
-@import '../../scss/mixins';
+@use "../../scss/variables" as vars;
+@use "../../scss/mixins" as mixins;
+@use "sass:color";
 
-.header {
-  text-align: center;
-  padding: 0.5rem;
-  margin-top: 5rem;
-  h1{
-    font-size: 2.3rem;
-    margin-bottom: 1rem;
-    color: $cardNavBgColor;
-    font-family: monospace;
-  }
-  .btn {
-    // display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // align-items: center;
-    // gap: 1rem;
-@include flex( row,center,1rem);
-    button {
-      padding: 1rem;
-      border-radius: 1rem;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
+.product-list {
+  @include mixins.flex(row, center, 1rem);
+  margin: 1rem;
+
+  .card {
+    width: 350px;
+    height: vars.$cardHeight;
+    position: relative;
+    overflow: hidden;
+
+    .price {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: vars.$cardBgColor;
+      color: vars.$cardColor;
+      padding: vars.$cardPadding;
+      font-size: 0.9rem;
+      border-radius: vars.$borderRadius;
+      z-index: 2;
+    }
+
+    &-over {
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+      bottom: 0;
+      background-color: vars.$cardBgColor;
+      color: color.adjust(vars.$cardColor, $lightness: -50%);
+      font-size: 1.2rem;
+      border-radius: vars.$borderRadius;
+      transform: translateX(100%);
       transition: all 1s;
-      &:hover {
-        background-color: $btnHoverColor;
+      height: 25%;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
+
+    &:hover .card-over {
+      transform: translateX(0%);
+    }
+
+    &:hover .img {
+      filter: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: vars.$cardHeight;
+    border-radius: vars.$borderRadius;
+    filter: sepia(1);
   }
 }

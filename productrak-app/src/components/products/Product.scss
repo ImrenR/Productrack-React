@@ -1,56 +1,62 @@
-@import "../../scss/variables";
-@import "../../scss/mixins";
+@use "../../scss/variables" as vars;
+@use "../../scss/mixins" as mixins;
+@use "sass:color";
 
 .product-list {
-  @include flex(row, center, 1rem);
+  @include mixins.flex(row, center, 1rem);
   margin: 1rem;
+
   .card {
-    // border: 5px solid red;
     width: 350px;
-    height: $cardHeight;
+    height: vars.$cardHeight;
     position: relative;
-     overflow: hidden;
+    overflow: hidden;
+
     .price {
-      // border: 5px solid red;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: $cardBgColor;
-      color: $cardColor;
-      padding: $cardPadding;
+      background-color: vars.$cardBgColor;
+      color: vars.$cardColor;
+      padding: vars.$cardPadding;
       font-size: 0.9rem;
-      border-radius: $borderRadius;
+      border-radius: vars.$borderRadius;
       z-index: 2;
     }
+
     &_over {
       position: absolute;
       width: 100%;
       z-index: 3;
       bottom: 0;
-      background-color: $cardBgColor;
-      color: darken($cardColor, 50%);
+      background-color: vars.$cardBgColor;
+      color: color.adjust(vars.$cardColor, $lightness: -50%);
       font-size: 1.2rem;
-      border-radius: $borderRadius;
+      border-radius: vars.$borderRadius;
       transform: translateX(100%);
       transition: all 1s;
       height: 25%;
       overflow: auto;
-      &::-webkit-scrollbar{
+
+      &::-webkit-scrollbar {
         display: none;
       }
     }
+
     &:hover .card_over {
-     transform: translateX(0%);
+      transform: translateX(0%);
     }
+
     &:hover .img {
-     filter: none;
+      filter: none;
     }
   }
+
   img {
     width: 100%;
-    height: $cardHeight;
-    border-radius: $borderRadius;
+    height: vars.$cardHeight;
+    border-radius: vars.$borderRadius;
     filter: sepia(1);
   }
 }
