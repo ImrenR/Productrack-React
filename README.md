@@ -1,118 +1,91 @@
-# Productrack-React
+## Productrack-React
 
-A simple React-based product tracking web application with a modular structure and SCSS styling.  
-Deployed on **GitHub Pages**: [View Live](https://imrenr.github.io/productrak-app/)
+A React + Vite product tracking web application with a modular structure and SCSS styling.
+Deployed on GitHub Pages: View Live
 
 ---
 
 ## Features
-- Built with **React.js** for a component-based structure
-- **SCSS (Sass)** for modular, maintainable styling
-- Organized file structure with reusable components
-- Deployed using **GitHub Pages**
+
+- Built with React.js and Vite for fast development and optimized - production builds.
+- SCSS (Sass) for modular, maintainable styling with variables and mixins.
+- CSS Modules for scoped component styles.
+- Reusable components: Header, ProductList, ProductCard.
+- Dynamic categories and hover effects on product cards.
+- Fully production-ready build with vite build and preview with vite preview.
 
 ---
 
-##  Tech Stack
-- **React** (Create React App)
-- **JavaScript (ES6+)**
-- **SCSS (Sass)** for styling
-- **GitHub Pages** for deployment
+## Tech Stack
+
+- React (component-based architecture)
+- Vite (fast dev server & optimized builds)
+- JavaScript (ES6+)
+- SCSS (Sass) for styling
+- CSS Modules for scoped component styles
+- GitHub Pages for deployment
 
 ---
 
-##  Folder Structure
-Productrack-React/
-```│
+## Folder Structure
+
+```Productrack-React/
 ├── node_modules/ 
 ├── public/ 
 ├── src/ 
-│ ├── components/ 
-│ │ ├── Header/
-│ │ ├── ProductList/
-│ │ └── ProductCard/
-│ ├── App.js 
-│ ├── index.js 
-│ └── styles/ 
+│   ├── components/ 
+│   │   ├── Header/
+│   │   │   ├── Header.jsx
+│   │   │   └── Header.module.scss
+│   │   ├── ProductList/
+│   │   │   ├── ProductList.jsx
+│   │   │   └── Product.scss
+│   │   └── ProductCard/
+│   │       └── ProductCard.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── scss/ 
+│       ├── variables.scss
+│       ├── mixins.scss
+│       └── resets.scss
 ├── package.json 
-└── README.md 
+└── README.md
 ```
----
+
 
 ##  Installation & Setup
+### Clone the repository
 
-1. **Clone the repository**
-   ```bash
-   git clone https://imrenr.github.io/productrak-app/
-   cd Productrack-React
+```git clone https://github.com/imrenr/productrak-app.git
+cd Productrack-React
+```
+### Install dependencies
 
-# Getting Started with Create React App
+```npm install
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Start development server
 
-## Available Scripts
+```npm run dev
+```
+- Opens app in development mode at http://localhost:5173
+ (default Vite port)
+- Hot module replacement (HMR) is enabled for instant updates
+- Build for production
 
-In the project directory, you can run:
+```npm run build
+```
+- Outputs optimized files in the dist/ folder
 
-### `npm start`
+### Preview production build locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```npm run preview
+```
+- Serves the production build at http://localhost:4173
+  (Vite preview server)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+```npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
