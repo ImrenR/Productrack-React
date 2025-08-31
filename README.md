@@ -56,36 +56,35 @@ Deployed on GitHub Pages: View Live
 ##  Installation & Setup
 ### Clone the repository
 
-```git clone https://github.com/imrenr/productrak-app.git
+git clone https://github.com/imrenr/productrak-app.git
 cd Productrack-React
-```
+
 ### Install dependencies
 
-```npm install
-```
+npm install
 
 ### Start development server
 
-```npm run dev
-```
+npm run dev
+
 - Opens app in development mode at http://localhost:5173
  (default Vite port)
 - Hot module replacement (HMR) is enabled for instant updates
 - Build for production
 
-```npm run build
-```
+npm run build
+
 - Outputs optimized files in the dist/ folder
 
 ### Preview production build locally
 
-```npm run preview
-```
+npm run preview
+
 - Serves the production build at http://localhost:4173
   (Vite preview server)
 
 ## Deployment
 
-```npm run build
-```
+npm run build
+
 
