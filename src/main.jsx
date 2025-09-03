@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import './index.css'; // Keep if you use global styles

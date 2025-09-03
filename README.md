@@ -1,79 +1,12 @@
-## Productrack-React
+# React + Vite
 
-A React + Vite product tracking web application with a modular structure and SCSS styling.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
+## Expanding the ESLint configuration
 
-- Built with React.js and Vite for fast development and optimized - production builds.
-- SCSS (Sass) for modular, maintainable styling with variables and mixins.
-- CSS Modules for scoped component styles.
-- Reusable components: Header, ProductList, ProductCard.
-- Dynamic categories and hover effects on product cards.
-- Fully production-ready build with vite build and preview with vite preview.
-
----
-
-## Tech Stack
-
-- React (component-based architecture)
-- Vite (fast dev server & optimized builds)
-- JavaScript (ES6+)
-- SCSS (Sass) for styling
-- CSS Modules for scoped component styles
-- GitHub Pages for deployment
-
----
-
-## Folder Structure
-
-```Productrack-React/
-├── node_modules/ 
-├── public/ 
-├── src/ 
-│   ├── components/ 
-│   │   ├── Header/
-│   │   │   ├── Header.jsx
-│   │   │   └── Header.module.scss
-│   │   ├── ProductList/
-│   │   │   ├── ProductList.jsx
-│   │   │   └── Product.scss
-│   │   └── ProductCard/
-│   │       └── ProductCard.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── scss/ 
-│       ├── variables.scss
-│       ├── mixins.scss
-│       └── resets.scss
-├── package.json 
-└── README.md
-```
-
-
-##  Installation & Setup
-### Clone the repository
-
-git clone https://github.com/ImrenR/Productrack-React.git
-
-cd Productrack-React
-
-### Install dependencies
-
-npm install
-
-### Start development server
-
-npm run dev
-
-- Opens app in development mode at http://localhost:5173
- (default Vite port)
-
-
-
-
-
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
