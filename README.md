@@ -1,12 +1,74 @@
-# React + Vite
+# Electronics Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React e-commerce app built with **React 18**, **Vite**, and **SCSS**, displaying products from a static dataset. This project demonstrates component-based architecture, props, and basic styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## Features
+
+- Display a list of products with images, title, and price
+- Filter products by category (electronics, jewelry, men's clothing, women's clothing)
+- Reusable components: `Header`, `ProductList`, `ProductCard`
+- Styled with SCSS modules for modular and scoped CSS
+
+---
+
+## Technologies
+
+- **React 18**
+- **Vite** – fast frontend build tool
+- **SCSS / CSS Modules** – modular styling
+- **JavaScript (ES6+)**
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ImrenR/Productrack-React.git
+cd Productrack-React
+npm install
+npm run dev
+http://localhost:5173
+```
+
+---
+
+## Project Structure
+
+```productrack-react/
+├── src/
+│   ├── components/
+│   │   ├── header/
+│   │   │   ├── Header.jsx
+│   │   │   └── Header.module.scss
+│   │   ├── products/
+│   │   │   ├── ProductList.jsx
+│   │   │   ├── ProductCard.jsx
+│   │   │   └── Product.scss
+│   ├── helper/
+│   │   └── data.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.scss
+│   └── index.css
+├── package.json
+└── vite.config.js
+```
+
+
+
+
